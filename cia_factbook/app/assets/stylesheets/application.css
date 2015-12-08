@@ -1,0 +1,60 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+  /*background-size: 100%;*/
+  /*background-image: url(http://www.envirosecurity.org/images/esag/CIA.jpg);*/
+  background-repeat: no-repeat;
+  background-position: right top;
+  background: linear-gradient(to bottom right, #838383, #bbbbbb);
+  font-family: "Arial", Arial, sans-serif;
+}
+
+nav {
+  margin-right: 40px;
+}
+
+nav a, a:visited {
+  text-decoration: none;
+}
+
+body a, a:visited {
+  text-decoration: none;
+  color: #192e75;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 1.2em;
+}
+
+h1 {
+  text-align: center;
+  margin-right: 20px;
+}
+
+body  {
+  text-align: center;
+}
+
+body img {
+  width: 25%;
+}
+
+body {
+  display: block;
+  list-style: none;
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CiaFactbook</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= image_tag('https://www.cia.gov/library/publications/the-world-factbook/images/logo.png') %>
+  <h1>CIA World Factbook</h1>
+  <nav>
+    <ul>
+      <li>
+        <%= link_to('List of Countries', countries_path) %>
+      </li>
+      <li>
+        <%= link_to('New Entry', new_country_path) %>
+      </li>
+    </ul>
+  </nav>
+
+  <%= yield %>
+
+</body>
+</html>

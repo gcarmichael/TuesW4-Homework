@@ -1,0 +1,30 @@
+<h1>Edit a Country's Details</h1>
+
+<%= form_for @country do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, :autofocus => true %>
+  <br>
+
+  <%= f.label :flag_img %>
+  <%= f.text_field :flag_img %>
+  <br>
+
+  <%= f.label :size %>
+  <%= f.number_field :size %>
+  <br>
+
+  <%= f.label :population %>
+  <%= f.number_field :population %>
+  <br>
+
+  <%= f.label :language %>
+  <%= f.text_field :language %>
+  <br>
+
+  <%= f.label :currency %>
+  <%= f.text_field :currency %>
+  <br>
+
+  <%= f.submit 'Edit Country' %>
+
+<% end %>

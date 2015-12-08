@@ -1,0 +1,11 @@
+<h1><%= @country.name %></h1>
+<%= image_tag(@country.flag_img, alt:'No image', width: 200) %>
+<br>
+<br>
+<%= @country.name %>'s area size is <%= number_to_human(@country.size) %> km&sup2.
+<br>
+<%= @country.name %>'s population is <%= number_to_human(@country.population) %>.
+<br>
+<%= @country.name %>'s first language is <%= @country.language %>.
+<br>
+<%= @country.name %>'s currency is the <%= @country.currency %>.

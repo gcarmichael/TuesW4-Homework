@@ -1,0 +1,23 @@
+<h1>
+  Countries
+  <br>
+  Click flags for details
+</h1>
+<hr>
+
+<p>
+  <% @countries.each do |country| %>
+  <h3> <%= country.name %> </h3>
+<!--   <a href="<%= country_path(country) %>">
+    <img src="<%= country.flag_img %>">
+  </a> -->
+  <%= link_to(image_tag(country.flag_img, alt: 'Click for details'), country_path(country)) %>
+  <br>
+  <%= link_to("Edit Details", edit_country_path(country)) %>
+  <br>
+  <h4>
+    <%= link_to("Delete Country Entry", country_path(country), method: :delete, data: {confirm: "Do you wish to delete this country's entry?"}) %>
+  </h4>
+  <hr>
+</p>
+<% end %>
